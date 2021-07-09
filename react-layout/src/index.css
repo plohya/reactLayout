@@ -552,7 +552,6 @@ a {
 }
 
 .main_qualified-support_container .img-slidero {
-  background-image: url(./img/keyboard.jpg);
   min-width: 79rem;
   min-height: 49.5rem;
   display: -webkit-box;
@@ -563,71 +562,13 @@ a {
           align-items: flex-end;
 }
 
-.main_qualified-support_container .img-slidero .slider {
-  position: absolute;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 13.1rem;
-  height: 6rem;
-  background-color: var(--slider-bg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
-}
-
-.main_qualified-support_container .img-slidero .slider .none {
-  display: none;
-}
-
-.main_qualified-support_container .img-slidero .slider .arrow_left, .main_qualified-support_container .img-slidero .slider .arrow_right {
-  background: url(./img/arrow_drop_down.svg) no-repeat;
-  position: relative;
-  width: 2.4rem;
-  height: 2.4rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  cursor: pointer;
-}
-
-.main_qualified-support_container .img-slidero .slider .arrow_right {
-  background: url(./img/arrow_drop_down.svg) no-repeat;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-.main_qualified-support_container .img-slidero .slider .counter {
-  font-family: Segoe UI;
-  font-size: 1.5rem;
-  font-style: normal;
-  letter-spacing: 0em;
-  text-align: left;
-  color: var(--main-elem);
-  font-weight: 400;
-  line-height: 3rem;
-  color: #121212;
+.main_qualified-support_container .img-slider {
+  width: 79rem;
 }
 
 .main_qualified-support_container .img-slider .slider {
-  position: absolute;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   width: 13.1rem;
   height: 6rem;
-  background: var(--slider-bg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .main_qualified-support_container .img-slider .slider .none {

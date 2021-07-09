@@ -1,6 +1,12 @@
 import React from "react";
 
-const TopHeader = () => {
+class TopHeader extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+render() {
     return (
         <div className="upper-header">
             <div className='header_top_container'>  
@@ -21,6 +27,7 @@ const TopHeader = () => {
             </div>
         </div>
     );
+}
 }
 
 export default TopHeader;

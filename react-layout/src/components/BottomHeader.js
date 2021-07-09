@@ -2,6 +2,7 @@ import React from "react";
 
 class BottomHeader extends React.Component {
 
+
     render(){
         return (
         <div className="lower-header">

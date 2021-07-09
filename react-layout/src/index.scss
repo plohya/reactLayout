@@ -351,58 +351,25 @@
         }
 
         .img-slidero {
-            background-image: url(./img/keyboard.jpg);
+            // background-image: url(./img/keyboard.jpg);
             min-width: 79rem;
             min-height: 49.5rem;
             display: flex;
             align-items: flex-end;
-
-            .slider {
-                position: absolute;
-                align-self: flex-end;
-                width: 13.1rem;
-                height: 6rem;
-                background-color: var(--slider-bg);
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                z-index: 1;
-
-                .none {
-                    display: none;
-                }
-
-                .arrow_left, .arrow_right {
-                    background: url(./img/arrow_drop_down.svg) no-repeat;
-                    position: relative;
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    transform: rotate(90deg);
-                    cursor: pointer;
-                }
-
-                .arrow_right {
-                    background: url(./img/arrow_drop_down.svg) no-repeat;
-                    transform: rotate(270deg);
-                }
-
-                .counter {
-                    @include counter();
-                }
         }
-        }
-
+        
         .img-slider {
-            
+            width: 79rem;
+
             .slider {
-                position: absolute;
-                align-self: flex-end;
+                // position: absolute;
+                // align-self: flex-end;
                 width: 13.1rem;
                 height: 6rem;
-                background: var(--slider-bg);
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                // background: var(--slider-bg);
+                // display: flex;
+                // justify-content: space-around;
+                // align-items: center;
 
                 .none {
                     display: none;
