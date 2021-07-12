@@ -7,7 +7,6 @@
     --for-border: 0.5px solid #121212;
     --main-elem: #121212;
     transition: .5 ease all;
-
 } [theme='dark'] {
     font-size: 10px;
     --black-surface: #89DD65;
@@ -20,55 +19,53 @@
 
     .header_top_container  {
         .theme_button {
-            // background: url(../img/sun_blackS.svg) no-repeat;
+            background: url(./img/sun_blackS.svg) no-repeat;
         }
         .arrow_btn {
-            // background: url(../img/arrow_drop_down_blackS.svg) no-repeat;
+            background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
         }
     }
     .header_low_container {
         &_main_logo {
-            // background: url(../img/main-logo_blackS.svg) no-repeat;
+            background: url(./img/main-logo_blackS.svg) no-repeat;
         }
         &_header_navigation .arrow_btn {
-            // background: url(../img/arrow_drop_down_blackS.svg) no-repeat;
+            background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
         }
         .burger-header_menu {
-            // background: url(../img/bgreen.svg) no-repeat;
+            background: url(./img/bgreen.svg) no-repeat;
             background-size: 100%;
         }
     }
     .main_for-container .for-items-container .for_item {
         .img_person {
-            // background: url(../img/person_blackS.png) no-repeat;
+            background: url(./img/person_blackS.png) no-repeat;
         }
         .img_bag {
-            // background: url(../img/bag_blackS.png) no-repeat;
+            background: url(./img/bag_blackS.png) no-repeat;
         }
         .img_technology {
-            // background: url(../img/technology_blackS.png) no-repeat;
+            background: url(./img/technology_blackS.png) no-repeat;
         }
     }
     .main_pamm-service .tableArea_main-table  {
         .title-container .title_question .questionMark {
-            // background: url(../img/question_Icon_blackS.png) no-repeat;
+            background: url(./img/question_Icon_blackS.png) no-repeat;
         }
         .table_row .row_element_graph {
-            // background: url(../img/graph_blackS.png) no-repeat;
+            background: url(./img/graph_blackS.png) no-repeat;
             mix-blend-mode: lighten;
         }
     }
     .footer_container .logo-info .main-logo {
-        // background: url(../img/main-logo_blackS.svg) no-repeat;
+        background: url(./img/main-logo_blackS.svg) no-repeat;
     }
 }
 
     $lime-gradient: linear-gradient(225deg, #89DD65 0%, #AEDD65 100%);
     $grey-font: #828282;
 
-    #check-menu:checked body {
-        overflow: hidden;
-    }
+  
 
     body {
         margin: 0;

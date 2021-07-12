@@ -7,40 +7,18 @@ import keyboard from '../img/keyboard.jpg';
 import example from '../img/example.png';
 import exampletwo from '../img/exampleTwo.jpg';
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "black" }}
-      onClick={onClick}
-    />
-  );
-}
-
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
-      // arrows: true,
+      arrows: false,
+      autoplay: true,
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
-      // nextArrow: <SampleNextArrow />,
-      // prevArrow: <SamplePrevArrow />,
+      adaptiveHeight: true,
       className: 'img-slidero',
     };
     return (

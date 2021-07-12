@@ -22,16 +22,50 @@
   transition: .5 ease all;
 }
 
+[theme='dark'] .header_top_container .theme_button {
+  background: url(./img/sun_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_top_container .arrow_btn {
+  background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_low_container_main_logo {
+  background: url(./img/main-logo_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_low_container_header_navigation .arrow_btn {
+  background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
+}
+
 [theme='dark'] .header_low_container .burger-header_menu {
+  background: url(./img/bgreen.svg) no-repeat;
   background-size: 100%;
 }
 
+[theme='dark'] .main_for-container .for-items-container .for_item .img_person {
+  background: url(./img/person_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_for-container .for-items-container .for_item .img_bag {
+  background: url(./img/bag_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_for-container .for-items-container .for_item .img_technology {
+  background: url(./img/technology_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_pamm-service .tableArea_main-table .title-container .title_question .questionMark {
+  background: url(./img/question_Icon_blackS.png) no-repeat;
+}
+
 [theme='dark'] .main_pamm-service .tableArea_main-table .table_row .row_element_graph {
+  background: url(./img/graph_blackS.png) no-repeat;
   mix-blend-mode: lighten;
 }
 
-#check-menu:checked body {
-  overflow: hidden;
+[theme='dark'] .footer_container .logo-info .main-logo {
+  background: url(./img/main-logo_blackS.svg) no-repeat;
 }
 
 body {
@@ -49,6 +83,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.over {
+  overflow: hidden;
 }
 
 .header {
@@ -386,6 +424,7 @@ a {
 .header_low_container .burger-header_menu {
   display: none;
   height: 4rem;
+  background: url(./img/burger.svg) no-repeat;
   cursor: pointer;
 }
 
@@ -470,6 +509,9 @@ a {
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
   }
+  .header .header_low_container #check-menu:checked body {
+    overflow: hidden;
+  }
   .header .burger-header_menu {
     display: inline;
   }
@@ -507,6 +549,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 2rem 0 2rem;
   max-width: 120rem;
   width: 100%;
@@ -628,6 +673,17 @@ a {
   .main_qualified-support_container .img {
     width: 100%;
     height: auto;
+  }
+  .main_qualified-support_container .img-slider {
+    min-width: none;
+    min-height: none;
+    width: 100%;
+    height: auto;
+  }
+  .main_qualified-support_container .img-slidero {
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
   }
 }
 

@@ -1,5 +1,9 @@
 @import 'theme-font.scss';
 
+.over {
+    overflow: hidden;
+}
+
 .header {
     height: 13.5rem;
 
@@ -213,7 +217,7 @@
         .burger-header_menu {
             display: none;
             height: 4rem;
-            // background: url(../img/burger.svg) no-repeat;
+            background: url(./img/burger.svg) no-repeat;
             cursor: pointer;
         }
     }
@@ -245,8 +249,6 @@
 
             &_open_buttons {
                 position: relative;
-                // max-height: 50rem;
-                // top: 10rem;
                 height: 15rem;
                 justify-content: space-around;
                 align-items: center;
@@ -293,6 +295,10 @@
                 border-bottom: 6px solid #89DD65;   
                 transition: .5s ease all;
             }
+
+            #check-menu:checked body {
+                overflow: hidden;
+            }
         }
 
         .burger-header_menu {
@@ -316,7 +322,6 @@
 .main {
 
     .qualified-support-container_wrapper {
-        // width: 100%;
         background-color: var(--main-bg);
         transition: .5s ease all;
     }
@@ -328,6 +333,7 @@
         .area {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin: 0 2rem 0 2rem;
             max-width: 120rem;
             width: 100%;
@@ -351,7 +357,6 @@
         }
 
         .img-slidero {
-            // background-image: url(./img/keyboard.jpg);
             min-width: 79rem;
             min-height: 49.5rem;
             display: flex;
@@ -362,14 +367,8 @@
             width: 79rem;
 
             .slider {
-                // position: absolute;
-                // align-self: flex-end;
                 width: 13.1rem;
                 height: 6rem;
-                // background: var(--slider-bg);
-                // display: flex;
-                // justify-content: space-around;
-                // align-items: center;
 
                 .none {
                     display: none;
@@ -420,6 +419,19 @@
                 width: 100%;
                 height: auto;
             }
+
+            .img-slider {
+                min-width: none;
+                min-height: none;
+                width: 100%;
+                height: auto;
+            }
+
+            .img-slidero {
+                min-height: 100%;
+                min-width: 100%;
+                width: 100%;
+            }
         }
 
         @media screen and (max-width: 768px) {
@@ -433,7 +445,6 @@
                 }
             }
         }
-
     }
 
     &_for-container {
@@ -530,13 +541,11 @@
             
             .title {
                 @include pamm-service-title();
-                // width: 42rem;
                 width: 100%;          
             }
 
             .subtitle {
                 @include subtitleSupport();
-                // width: 100%;          
             }
         }
 
@@ -760,7 +769,6 @@
                 .bold_item, .usual_item {
                     font-size: 3rem;
                     line-height: 2;
-                    // margin-top: 4rem;
                     @media screen and (max-width: 422px) {
                         font-size: 2rem;
                         line-height: 1.8;

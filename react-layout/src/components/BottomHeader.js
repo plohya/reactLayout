@@ -2,13 +2,20 @@ import React from "react";
 
 class BottomHeader extends React.Component {
 
+    bodyBlock() {
+        if(document.getElementById('check-menu').checked) {
+            document.querySelector('body').classList.add('over');
+        } else (
+            document.querySelector('body').classList.remove('over')
+        )
+    }
 
     render(){
         return (
         <div className="lower-header">
             <div className="header_low_container">
                 <div className="header_low_container_main_logo"></div>
-                <input type="checkbox" id="check-menu" />
+                <input type="checkbox" id="check-menu" onChange={() => this.bodyBlock()}/>
 
                 <div className="header-navigation">
                     

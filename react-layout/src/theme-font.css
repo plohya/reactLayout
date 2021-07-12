@@ -22,16 +22,50 @@
   transition: .5 ease all;
 }
 
+[theme='dark'] .header_top_container .theme_button {
+  background: url(./img/sun_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_top_container .arrow_btn {
+  background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_low_container_main_logo {
+  background: url(./img/main-logo_blackS.svg) no-repeat;
+}
+
+[theme='dark'] .header_low_container_header_navigation .arrow_btn {
+  background: url(./img/arrow_drop_down_blackS.svg) no-repeat;
+}
+
 [theme='dark'] .header_low_container .burger-header_menu {
+  background: url(./img/bgreen.svg) no-repeat;
   background-size: 100%;
 }
 
+[theme='dark'] .main_for-container .for-items-container .for_item .img_person {
+  background: url(./img/person_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_for-container .for-items-container .for_item .img_bag {
+  background: url(./img/bag_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_for-container .for-items-container .for_item .img_technology {
+  background: url(./img/technology_blackS.png) no-repeat;
+}
+
+[theme='dark'] .main_pamm-service .tableArea_main-table .title-container .title_question .questionMark {
+  background: url(./img/question_Icon_blackS.png) no-repeat;
+}
+
 [theme='dark'] .main_pamm-service .tableArea_main-table .table_row .row_element_graph {
+  background: url(./img/graph_blackS.png) no-repeat;
   mix-blend-mode: lighten;
 }
 
-#check-menu:checked body {
-  overflow: hidden;
+[theme='dark'] .footer_container .logo-info .main-logo {
+  background: url(./img/main-logo_blackS.svg) no-repeat;
 }
 
 body {

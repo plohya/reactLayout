@@ -4,6 +4,9 @@ class TopHeader extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            theme: props.theme,
+        }
     }
 
 render() {
@@ -22,7 +25,7 @@ render() {
                         <div className='language_item' href="#">English</div>
                         <div className="arrow_btn"></div>
                     </div>
-                    <div className="theme_button" />
+                    <div className="theme_button" onClick={() => {this.props.updateData()}} />
                 </div>
             </div>
         </div>
