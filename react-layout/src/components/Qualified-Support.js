@@ -1,6 +1,6 @@
 import React from "react";
 
-class QS extends React.Component {
+class QualifiedSupport extends React.Component {
 
     render() {
         return(
@@ -18,4 +18,4 @@ class QS extends React.Component {
     }
 }
 
-export default QS;
+export default QualifiedSupport;

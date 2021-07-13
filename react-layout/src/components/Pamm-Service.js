@@ -1,4 +1,4 @@
-const PS = () => {
+const PammService = () => {
     return (
     <div className="main_pamm-service">
     <div className="pamm-container">
@@ -110,4 +110,4 @@ const PS = () => {
     );
 }
 
-export default PS;
+export default PammService;

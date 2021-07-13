@@ -2,9 +2,9 @@ import './index.css';
 import React from "react";
 import TopHeader from './components/TopHeader';
 import BottomHeader from './components/BottomHeader';
-import QS from './components/QS'
-import FC from './components/FC'
-import PS from './components/PS'
+import QS from './components/Qualified-Support'
+import FC from './components/For-Cards'
+import PS from './components/Pamm-Service'
 import Footer from './components/Footer'
 import SimpleSlider from './components/Slider';
 
@@ -41,7 +41,7 @@ render() {
   return (
     <div>
       <div className='header'>
-        <TopHeader theme={this.state.theme} updateData={this.updateData}/>
+        <TopHeader theme={this.state.theme} updateData={this.updateData} />
         <BottomHeader />
       </div>
       

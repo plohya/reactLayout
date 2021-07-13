@@ -1,4 +1,4 @@
-const FC = () => {
+const ForCards = () => {
 return (
 <div className="main_for-container">
     <div className="for-items-container">
@@ -57,4 +57,4 @@ return (
 );
 }
 
-export default FC;
+export default ForCards;
