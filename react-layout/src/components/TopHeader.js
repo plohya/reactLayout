@@ -1,15 +1,7 @@
 import React from "react";
 
-class TopHeader extends React.Component {
+function TopHeader(props) {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            theme: props.theme,
-        }
-    }
-
-render() {
     return (
         <div className="upper-header">
             <div className='header_top_container'>  
@@ -25,12 +17,11 @@ render() {
                         <div className='language_item' href="#">English</div>
                         <div className="arrow_btn"></div>
                     </div>
-                    <div className="theme_button" onClick={() => {this.props.updateData()}} />
+                    <div className="theme_button" onClick={() => {props.updateData()}} />
                 </div>
             </div>
         </div>
     );
-}
 }
 
 export default TopHeader;

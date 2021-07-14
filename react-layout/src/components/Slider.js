@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -7,18 +6,14 @@ import keyboard from '../img/keyboard.jpg';
 import example from '../img/example.png';
 import exampletwo from '../img/exampleTwo.jpg';
 
-export default class SimpleSlider extends Component {
-  render() {
+function SimpleSlider() {
     const settings = {
       arrows: false,
       autoplay: true,
       dots: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      speed: 1000,
       fade: true,
-      adaptiveHeight: true,
       className: 'img-slidero',
     };
     return (
@@ -30,5 +25,6 @@ export default class SimpleSlider extends Component {
         </Slider>
       </div>
     );
-  }
 }
+
+export default SimpleSlider;

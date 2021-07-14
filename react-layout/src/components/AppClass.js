@@ -1,6 +1,5 @@
 import './index.css';
 import React from "react";
-import { useState } from 'react';
 import TopHeader from './components/TopHeader';
 import BottomHeader from './components/BottomHeader';
 import QualifiedSupport from './components/QualifiedSupport'
@@ -8,15 +7,18 @@ import ForCards from './components/ForCards'
 import PammService from './components/PammService'
 import Footer from './components/Footer'
 
-function App() {
+class App extends React.Component {
 
-  const [theme, setTheme] = useState(localStorage.theme);
-
-  function setStorageTheme() {
+  state = {
+    theme: localStorage.theme,
+  };
+  
+  setTheme() {
     if (localStorage.theme === undefined) {
       document.documentElement.setAttribute('theme', 'light');
-      setTheme('light');
+      this.setState({theme: 'light'});
     }
+
     if (localStorage.theme === 'dark') {
         document.documentElement.setAttribute('theme', 'dark');
         localStorage.setItem('theme', 'light');
@@ -24,18 +26,19 @@ function App() {
       document.documentElement.setAttribute('theme', 'light');
       localStorage.setItem('theme', 'dark');
     }
-    localStorage.setItem('theme', theme);
+  localStorage.setItem('theme', this.state.theme);
   }
 
-  function updateData(value) {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
+  updateData = (value) => {
+    this.state.theme === 'light' ? this.setState({theme: 'dark'}) : this.setState({theme: 'light'});
   }
 
-  setStorageTheme();
+render() {
+  this.setTheme();
   return (
     <div>
       <div className='header'>
-        <TopHeader theme={theme} updateData={() => updateData()} />
+        <TopHeader theme={this.state.theme} updateData={this.updateData} />
         <BottomHeader />
       </div>
 
@@ -50,6 +53,7 @@ function App() {
       </div>
     </div>
   );
+}
 }
 
 export default App;
